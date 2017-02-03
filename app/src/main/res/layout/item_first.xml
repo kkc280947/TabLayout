@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivBimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/logo_adidas"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_toRightOf="@+id/ivBimage"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/ivBimage"
+        android:text="Item Name"
+        android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        />
+
+</RelativeLayout>
