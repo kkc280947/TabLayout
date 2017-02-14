@@ -4,9 +4,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.example.cbluser3.tablayout.fragment.Fragment1;
-import com.example.cbluser3.tablayout.fragment.Fragment2;
-import com.example.cbluser3.tablayout.fragment.Fragment3;
+import com.example.cbluser3.tablayout.fragment.CallFragment;
+import com.example.cbluser3.tablayout.fragment.ChatFragment;
+import com.example.cbluser3.tablayout.fragment.ContactFragment;
 
 /**
  * Created by cbluser3 on 3/2/17.
@@ -24,13 +24,13 @@ public class MyPagerAdapter extends FragmentPagerAdapter{
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                Fragment1 tab1 = new Fragment1();
+                CallFragment tab1 = new CallFragment();
                 return tab1;
             case 1:
-                Fragment2 tab2 = new Fragment2();
+                ChatFragment tab2 = new ChatFragment();
                 return tab2;
             case 2:
-                Fragment3 tab3 = new Fragment3();
+                ContactFragment tab3 = new ContactFragment();
                 return tab3;
             default:
                 return null;
@@ -45,9 +45,9 @@ public class MyPagerAdapter extends FragmentPagerAdapter{
     @Override
     public CharSequence getPageTitle(int position) {
         switch (position){
-            case 0: return "Tab1";
-            case 1: return "Tab2";
-            case 2:  return  "tab3";
+            case 0: return "Calls";
+            case 1: return "Chats";
+            case 2:  return  "Contacts";
             default:return null;
         }
     }

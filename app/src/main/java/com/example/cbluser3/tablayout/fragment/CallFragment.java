@@ -9,13 +9,23 @@ import android.view.ViewGroup;
 
 import com.example.cbluser3.tablayout.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by cbluser3 on 3/2/17.
  */
-public class Fragment2 extends Fragment{
+public class CallFragment extends Fragment{
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.second_fragment,container,false);
+        View view=inflater.inflate(R.layout.call_fragment,container,false);
+
+        return view;
     }
+
+
+
+
 }

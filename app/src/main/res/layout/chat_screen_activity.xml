@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/top"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/tool_chat"
+        android:title="@string/chatApp"
+        android:titleTextColor="@android:color/white"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvChatList"
+        android:transcriptMode="alwaysScroll"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/llSend"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_chat" />
+
+    <RelativeLayout
+        android:id="@+id/llSend"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_toLeftOf="@+id/btSend"
+            android:layout_alignBottom="@+id/btSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:maxLines="4"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:inputType="textMultiLine"
+            android:minLines="1"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:hint="Type Here"
+            />
+        <Button
+            android:id="@+id/btSend"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|right"
+            android:paddingRight="25dp"
+            android:layout_alignParentRight="true"
+           android:background="@drawable/send"
+         >
+        </Button>
+    </RelativeLayout>
+</RelativeLayout>

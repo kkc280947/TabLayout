@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">TabLayout</string>
+    <string name="add">added</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Settings</string>
+    <string name="chatApp">ChatApp</string>
+    <string name="addCon">Add Contacts</string>
+    <string name="addContDe">Enter Name and Phone</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
 </resources>
